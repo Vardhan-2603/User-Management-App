@@ -1,0 +1,17 @@
+###Create User
+POST http://localhost:4000/user-api/users
+Content-Type: application/json
+
+{
+    "name":"vardhan",
+    "email":"bollavardhgganreddy265@gmail.com",
+    "dateofBirth":"2005-03-26"    
+}
+### Retrieve all Users
+GET http://localhost:4000/user-api/users
+### Retrieve User by ID
+GET http://localhost:4000/user-api/user/69a698c436343a604ac7fd26
+### Delete User by ID
+DELETE http://localhost:4000/user-api/user/69a699f8b037dc20900a79d4
+###Activate user by ID
+PATCH http://localhost:4000/user-api/user/69a699f8b037dc20900a79d4
